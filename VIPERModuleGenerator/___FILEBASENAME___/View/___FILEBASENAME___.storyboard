@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="OHf-co-nwB">
+            <objects>
+                <viewController storyboardIdentifier="___FILEBASENAME___ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5tZ-hW-JGi" customClass="___FILEBASENAME___ViewController" customModule="VIPERModuleGenerator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HE4-4H-VRa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdh-ik-20i">
+                                <rect key="frame" x="20" y="6" width="384" height="48"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gli-6V-1mj">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="48"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kq-NK-oIb">
+                                                <rect key="frame" x="0.0" y="0.0" width="316" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RE4-cq-uoS">
+                                                <rect key="frame" x="336" y="0.0" width="48" height="48"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="TnI-GD-noD"/>
+                                                    <constraint firstAttribute="width" constant="48" id="Yzq-jZ-D8h"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="bottomsheet_close"/>
+                                                <connections>
+                                                    <action selector="didTapCloseButton:" destination="5tZ-hW-JGi" eventType="touchUpInside" id="Fta-9a-pqN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="4kq-NK-oIb" firstAttribute="top" secondItem="gli-6V-1mj" secondAttribute="top" id="2hc-bE-K6c"/>
+                                            <constraint firstItem="4kq-NK-oIb" firstAttribute="leading" secondItem="gli-6V-1mj" secondAttribute="leading" id="5vG-gd-AgL"/>
+                                            <constraint firstAttribute="bottom" secondItem="4kq-NK-oIb" secondAttribute="bottom" id="TC5-hd-k0b"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="ColorBackground"/>
+                                <constraints>
+                                    <constraint firstItem="gli-6V-1mj" firstAttribute="leading" secondItem="zdh-ik-20i" secondAttribute="leading" id="00w-21-FMx"/>
+                                    <constraint firstAttribute="trailing" secondItem="gli-6V-1mj" secondAttribute="trailing" id="D3N-kb-LGd"/>
+                                    <constraint firstItem="gli-6V-1mj" firstAttribute="top" secondItem="zdh-ik-20i" secondAttribute="top" id="K59-e3-sB0"/>
+                                    <constraint firstAttribute="bottom" secondItem="gli-6V-1mj" secondAttribute="bottom" id="NqK-6E-Wx0"/>
+                                    <constraint firstItem="gli-6V-1mj" firstAttribute="leading" secondItem="zdh-ik-20i" secondAttribute="leading" id="TtW-of-S5B"/>
+                                    <constraint firstAttribute="bottom" secondItem="gli-6V-1mj" secondAttribute="bottom" id="bvl-u3-ppr"/>
+                                    <constraint firstAttribute="trailing" secondItem="gli-6V-1mj" secondAttribute="trailing" id="lfG-Pi-xoi"/>
+                                    <constraint firstItem="gli-6V-1mj" firstAttribute="top" secondItem="zdh-ik-20i" secondAttribute="top" id="wEr-C3-Duj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Psy-IS-6N1"/>
+                        <color key="backgroundColor" name="ColorBackground"/>
+                        <constraints>
+                            <constraint firstItem="zdh-ik-20i" firstAttribute="leading" secondItem="Psy-IS-6N1" secondAttribute="leading" constant="20" id="VHR-Qf-pPg"/>
+                            <constraint firstItem="zdh-ik-20i" firstAttribute="top" secondItem="HE4-4H-VRa" secondAttribute="top" constant="6" id="WqJ-N4-uGO"/>
+                            <constraint firstItem="Psy-IS-6N1" firstAttribute="trailing" secondItem="zdh-ik-20i" secondAttribute="trailing" constant="10" id="zft-T9-bGn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="4kq-NK-oIb" id="r6T-dU-jNT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dNm-kW-MSo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="-194.19642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bottomsheet_close" width="24" height="24"/>
+        <namedColor name="ColorBackground">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
